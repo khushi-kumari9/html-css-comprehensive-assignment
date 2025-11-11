@@ -60,5 +60,4 @@ A responsive admin dashboard interface showcasing advanced CSS layout techniques
 
 
 
-Your Name | Beginner Software Developer  
-Email: your-email@example.com
+

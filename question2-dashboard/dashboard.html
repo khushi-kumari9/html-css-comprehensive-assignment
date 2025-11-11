@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>📊 DashAdmin</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">🏠 Dashboard</li>
+                    <li>👤 Users</li>
+                    <li>📈 Reports</li>
+                    <li>⚙️ Settings</li>
+                </ul>
+            </nav>
+            <div class="user-profile-sidebar">
+                <img src="avatar.jpg" alt="User Avatar">
+                <span>Admin</span>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header Bar -->
+            <header class="header-bar">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <input type="text" placeholder="Search...">
+                    <div class="notifications">🔔</div>
+                    <div class="profile-dropdown">👤 Admin ▼</div>
+                </div>
+            </header>
+
+            <!-- Statistics Cards -->
+            <section class="stats-grid">
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <div class="card-data">
+                        <h3>$34,500</h3>
+                        <p>Revenue</p>
+                        <span>+5% from last month</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <div class="card-data">
+                        <h3>1,245</h3>
+                        <p>Users</p>
+                        <span>+3% from last month</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛒</div>
+                    <div class="card-data">
+                        <h3>456</h3>
+                        <p>Orders</p>
+                        <span>+8% from last month</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <div class="card-data">
+                        <h3>12%</h3>
+                        <p>Growth</p>
+                        <span>+2% from last month</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Orders Table -->
+            <section class="recent-orders">
+                <h2>Recent Orders</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID ⬍</th>
+                                <th>Customer ⬍</th>
+                                <th>Product ⬍</th>
+                                <th>Amount ⬍</th>
+                                <th>Status ⬍</th>
+                                <th>Date ⬍</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#001</td>
+                                <td>John Doe</td>
+                                <td>Laptop</td>
+                                <td>$1200</td>
+                                <td><span class="badge success">Completed</span></td>
+                                <td>2025-11-10</td>
+                            </tr>
+                            <tr>
+                                <td>#002</td>
+                                <td>Jane Smith</td>
+                                <td>Smartphone</td>
+                                <td>$800</td>
+                                <td><span class="badge warning">Pending</span></td>
+                                <td>2025-11-09</td>
+                            </tr>
+                            <tr>
+                                <td>#003</td>
+                                <td>Mike Johnson</td>
+                                <td>Headphones</td>
+                                <td>$150</td>
+                                <td><span class="badge danger">Cancelled</span></td>
+                                <td>2025-11-09</td>
+                            </tr>
+                            <tr>
+                                <td>#004</td>
+                                <td>Alice Brown</td>
+                                <td>Monitor</td>
+                                <td>$300</td>
+                                <td><span class="badge success">Completed</span></td>
+                                <td>2025-11-08</td>
+                            </tr>
+                            <tr>
+                                <td>#005</td>
+                                <td>David Wilson</td>
+                                <td>Keyboard</td>
+                                <td>$80</td>
+                                <td><span class="badge warning">Pending</span></td>
+                                <td>2025-11-08</td>
+                            </tr>
+                            <tr>
+                                <td>#006</td>
+                                <td>Emma Davis</td>
+                                <td>Mouse</td>
+                                <td>$40</td>
+                                <td><span class="badge success">Completed</span></td>
+                                <td>2025-11-07</td>
+                            </tr>
+                            <tr>
+                                <td>#007</td>
+                                <td>Chris Lee</td>
+                                <td>Tablet</td>
+                                <td>$500</td>
+                                <td><span class="badge warning">Pending</span></td>
+                                <td>2025-11-07</td>
+                            </tr>
+                            <tr>
+                                <td>#008</td>
+                                <td>Sophia Martinez</td>
+                                <td>Camera</td>
+                                <td>$700</td>
+                                <td><span class="badge danger">Cancelled</span></td>
+                                <td>2025-11-06</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="6">Showing last 8 orders</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <!-- User Analytics Table -->
+            <section class="user-analytics">
+                <h2>User Analytics</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User Type</th>
+                                <th>Count</th>
+                                <th>Percentage</th>
+                                <th>Trend</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Admin</td>
+                                <td>12</td>
+                                <td>2%</td>
+                                <td>📈</td>
+                            </tr>
+                            <tr>
+                                <td>Regular</td>
+                                <td>450</td>
+                                <td>73%</td>
+                                <td>📈</td>
+                            </tr>
+                            <tr>
+                                <td>Guest</td>
+                                <td>155</td>
+                                <td>25%</td>
+                                <td>📉</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td>617</td>
+                                <td>100%</td>
+                                <td>—</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Quick Actions: Add New Product Form -->
+            <section class="quick-actions">
+                <h2>Add New Product</h2>
+                <form>
+                    <!-- Product Information -->
+                    <fieldset>
+                        <legend>Product Information</legend>
+                        <label for="product-name">Product Name *</label>
+                        <input type="text" id="product-name" name="product-name" required>
+                        
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option>Electronics</option>
+                            <option>Clothing</option>
+                            <option>Accessories</option>
+                            <option>Other</option>
+                        </select>
+                        
+                        <label for="price">Price ($)</label>
+                        <input type="number" id="price" name="price" min="0" max="10000">
+                        
+                        <label for="sku">SKU / Code</label>
+                        <input type="text" id="sku" name="sku" pattern="[A-Za-z0-9\-]+">
+                    </fieldset>
+
+                    <!-- Inventory -->
+                    <fieldset>
+                        <legend>Inventory</legend>
+                        <label for="stock">Stock Quantity</label>
+                        <input type="number" id="stock" name="stock">
+                        
+                        <label for="reorder">Reorder Level</label>
+                        <input type="number" id="reorder" name="reorder">
+                        
+                        <label for="supplier">Supplier</label>
+                        <select id="supplier" name="supplier">
+                            <option>Supplier A</option>
+                            <option>Supplier B</option>
+                            <option>Supplier C</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Media -->
+                    <fieldset>
+                        <legend>Media</legend>
+                        <label for="product-image">Product Image</label>
+                        <input type="file" id="product-image" name="product-image" accept="image/*">
+
+                        <label>
+                            <input type="checkbox" name="featured">
+                            Featured Product
+                        </label>
+
+                        <label>
+                            <input type="radio" name="status" value="active" checked>
+                            Active
+                        </label>
+                        <label>
+                            <input type="radio" name="status" value="inactive">
+                            Inactive
+                        </label>
+                    </fieldset>
+
+                    <!-- Action Buttons -->
+                    <div class="form-actions">
+                        <button type="submit">Save</button>
+                        <button type="submit">Save & Continue</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>

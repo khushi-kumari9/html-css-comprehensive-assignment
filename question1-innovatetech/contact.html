@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Innovatech - Get in Touch for Services and Inquiries">
+    <meta name="author" content="Innovatech">
+    <title>Innovatech | Contact</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (same as other pages) -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/favicon.ico" alt="Innovatech Logo" width="30" height="30">
+                <h1>Innovatech</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Information -->
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <address>
+                Innovatech Headquarters<br>
+                123 Innovation Way<br>
+                Tech City, TX 75001<br>
+                <a href="tel:+11234567890">+1 (123) 456-7890</a><br>
+                <a href="mailto:info@innovatech.com">info@innovatech.com</a>
+            </address>
+
+            <h3>Office Hours</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00 AM - 4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="company">Company/Organization</label>
+                    <input type="text" id="company" name="company">
+                </fieldset>
+
+                <!-- Inquiry Details -->
+                <fieldset>
+                    <legend>Inquiry Details</legend>
+                    <label for="service-interest">Service Interest</label>
+                    <select id="service-interest" name="service-interest">
+                        <option value="web-dev">Web Development</option>
+                        <option value="mobile-apps">Mobile Apps</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <p>Project Timeline:</p>
+                    <label><input type="radio" name="timeline" value="asap"> ASAP</label>
+                    <label><input type="radio" name="timeline" value="1-3"> 1-3 months</label>
+                    <label><input type="radio" name="timeline" value="3-6"> 3-6 months</label>
+                    <label><input type="radio" name="timeline" value="6+"> 6+ months</label>
+
+                    <label for="budget">Budget Range:</label>
+                    <input type="range" id="budget" name="budget" min="1000" max="50000" step="1000">
+                    <span id="budget-value">$1000</span>
+
+                    <p>Project Type:</p>
+                    <label><input type="checkbox" name="project-type" value="new-website"> New Website</label>
+                    <label><input type="checkbox" name="project-type" value="redesign"> Redesign</label>
+                    <label><input type="checkbox" name="project-type" value="mobile-app"> Mobile App</label>
+                    <label><input type="checkbox" name="project-type" value="ecommerce"> E-commerce</label>
+                    <label><input type="checkbox" name="project-type" value="other"> Other</label>
+                </fieldset>
+
+                <!-- Message -->
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="project-description">Project Description *</label>
+                    <textarea id="project-description" name="project-description" rows="4" required></textarea>
+
+                    <label for="file-upload">Upload Requirements (Documents Only)</label>
+                    <input type="file" id="file-upload" name="file-upload" accept=".pdf,.doc,.docx,.txt">
+
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contact-method" value="email"> Email</label>
+                    <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+                    <label><input type="radio" name="contact-method" value="video"> Video Call</label>
+                </fieldset>
+
+                <!-- Terms -->
+                <fieldset>
+                    <legend>Terms & Subscription</legend>
+                    <label><input type="checkbox" name="terms" required> I agree to the Terms of Service and Privacy Policy</label>
+                    <label><input type="checkbox" name="newsletter"> Subscribe to our newsletter</label>
+                </fieldset>
+
+                <!-- Form Buttons -->
+                <button type="submit" class="btn">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer (same as other pages) -->
+    <footer>
+        <div class="footer-container">
+            <p>Contact Us: info@innovatech.com | +1 (123) 456-7890</p>
+            <p>
+                Follow Us:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">LinkedIn</a>
+            </p>
+            <p>&copy; 2025 Innovatech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update budget value dynamically
+        const budgetSlider = document.getElementById('budget');
+        const budgetValue = document.getElementById('budget-value');
+        budgetSlider.addEventListener('input', () => {
+            budgetValue.textContent = `$${budgetSlider.value}`;
+        });
+    </script>
+</body>
+</html>
